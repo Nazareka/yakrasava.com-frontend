@@ -1,0 +1,118 @@
+.friends
+    & > .search-container
+        width: 490px
+        display: block
+        margin: 10px 0px 15px 50px
+        & > input.search-bar
+            width: 100%
+            height: 35px
+            padding: 0 20px
+            font-size: 1rem
+            border: 1px solid #D0CFCE
+            outline: none
+            &:focus
+                border: 1px solid #008ABF
+                transition: 0.35s ease
+                color: #008ABF
+                &::-webkit-input-placeholder
+                    transition: opacity 0.45s ease
+                    opacity: 0
+                    
+                &::-moz-placeholder 
+                    transition: opacity 0.45s ease
+                    opacity: 0
+                    
+                &:-ms-placeholder 
+                    transition: opacity 0.45s ease
+                    opacity: 0
+        & > span
+            & > img.search-icon
+                position: relative
+                float: right
+                width: 75px
+                height: 75px
+                top: -56px
+                right: -45px
+    & > .secondRow
+	    margin-top: 1em
+    & > .row-container
+        display: flex
+        border-style: none none solid none
+        border-color: $nav-color
+        border-width: 1px
+        border-image: linear-gradient(90deg, rgb(250,250,250), $nav-color 50%,rgb(250,250,250)) 1
+        padding-bottom: 1em
+        margin-top: 1em
+        padding-left: 1em
+        & > .row
+            // flex: 1
+            display: flex
+            flex-wrap: nowrap
+            overflow-x: auto
+            // mask: linear-gradient(90deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 20%)
+            // -webkit-mask: linear-gradient(90deg,rgba(0,0,0,1) 80%, rgba(0,0,0,0) 96%)
+            & > div
+                flex: auto
+                margin-right: 5px
+                & > .img-profile-container
+                    display: flex
+                    justify-content: center
+                    margin-bottom: 5px
+                    & > img
+                        border-radius: 0.5em
+                        &:hover
+                            cursor: pointer
+                    // padding-left: 20px
+                & > .friend-action
+                    & > .nickname-wrapper
+                        border-style: solid
+                        border-color: $nav-color
+                        border-width: 1px
+                        border-radius: 10px
+                        padding-left: 5px
+                        padding-right: 5px
+                        display: flex
+                        justify-content: space-between
+                        &:hover
+                            color: white
+                            background-color: $nav-color
+                            cursor: pointer
+                        & > .status
+                            padding-left: 10px
+                            padding-top: 5px
+                            font-size: 15px
+
+                    & > .actions
+                        display: block
+                        transition: max-height .6s ease-out
+                        // max-height: 0
+                        // overflow: hidden
+                        margin: 0
+                        padding: 0
+                        max-height: 0
+                        opacity: 0
+                        // width: auto
+                        
+                        &-active
+                            max-height: 1000px
+                            opacity: 1
+                        & > .action
+                            padding-left: 5px
+                            // width: auto !important
+                            border-style: solid
+                            border-color: $nav-color
+                            border-width: 1px
+                            border-radius: 10px
+                            cursor: pointer
+                            list-style: none   
+                            // padding: 5px
+                            font-size: 15px
+                            // padding-right: 15px
+                            &:hover
+                                color: white
+                                background-color: $nav-color
+                                cursor: pointer
+            &::-webkit-scrollbar
+                width: 0px
+                height: 0px
+                background: transparent

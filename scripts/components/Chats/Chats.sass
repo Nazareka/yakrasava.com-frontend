@@ -1,0 +1,29 @@
+.chats-container
+	& > .chat
+		display: flex
+		border-style: none none solid none
+		border-color: $nav-color
+		border-width: 1px
+		border-image: linear-gradient(90deg, rgb(250,250,250), $nav-color 50%,rgb(250,250,250)) 1
+		padding-bottom: 1em
+		margin-top: 1em
+		padding-left: 1em
+		color: $nav-color
+		&:hover
+			
+		& > .logo
+			height: 67.5px
+			width: 50px
+			& > img
+				height: 67.5px
+				width: 50px
+				border-radius: 0.5em
+		& > .body-container
+			margin-top: 20px
+			margin-left: 20px
+			& > .title
+				font-size: 24px
+				margin-bottom: 10px
+			& > .last-message
+				margin-left: 10px
+	// min-width: 1000px 

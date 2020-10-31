@@ -1,0 +1,50 @@
+.header
+	display: flex
+	align-items: start
+	flex-direction: row
+	justify-content: space-between
+	margin-top: 1em
+	margin-right: 2em
+    & > .logo
+        height: 100px
+        width: 100px
+        margin-left: 30px
+        margin-top: 20px
+    & > .auth
+        padding-top: 0.5em
+        padding-bottom: 0.5em
+        padding-left: 0.5em
+        color: $nav-color
+        position: relative
+        overflow: hidden
+        cursor: pointer
+        border-style: solid
+        border-color: #1334c7
+        border-width: 0.05em
+        border-radius: 1em
+        .text
+            position: relative
+            transition: all .45s ease-Out
+        .circle
+            width: 0%
+            height: 0%
+            opacity: 0
+            line-height: 40px
+            border-radius: 50%
+            background: #1334c7
+            position: absolute
+            transition: all .5s ease-Out
+            top: 20px
+            left: 40px
+        &:hover
+            cursor: pointer
+            .circle
+                width: 200%
+                height: 500%
+                opacity: 1
+                top: -50px
+                left: -50px
+            .text
+                position: relative
+                transition: all .45s ease-Out
+                color: #ffffff
